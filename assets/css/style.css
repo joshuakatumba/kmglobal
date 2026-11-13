@@ -229,10 +229,11 @@ body {
 .btn {
   max-width: max-content;
   font-weight: var(--fw-700);
-  height: 55px;
+  font-size: var(--fs-9);
+  height: 38px;
   display: flex;
   align-items: center;
-  padding-inline: 50px;
+  padding-inline: 35px;
   border-radius: var(--radius-10);
   overflow: hidden;
   transition: var(--transition-2);
@@ -1043,7 +1044,7 @@ body {
 
   .container { max-width: 720px; }
 
-  .btn { height: 60px; }
+  .btn { height: 42px; }
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
@@ -1182,7 +1183,7 @@ body {
 
   .container { max-width: 960px; }
 
-  .btn { height: 70px; }
+  .btn { height: 48px; }
 
   .grid-list { grid-template-columns: repeat(3, 1fr); }
 
@@ -1817,4 +1818,28 @@ textarea.form-control {
 
 .logo-dot {
   color: hsl(157, 89%, 44%);
+}
+
+.header .container,
+.navbar-list {
+  align-items: center;
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+@media (min-width: 992px) {
+  .header > .container > .logo {
+    margin-inline: 0;
+  }
+
+  .header .btn {
+    margin-inline-start: 0;
+  }
+}
+
+.application-banner {
+  max-width: 380px;
+  margin-block-start: 28px;
 }
