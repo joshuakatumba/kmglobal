@@ -1752,9 +1752,8 @@ textarea.form-control {
 /* Brand logo mark */
 
 .logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .logo-mark {
