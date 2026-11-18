@@ -1844,3 +1844,170 @@ textarea.form-control {
   width: 100%;
   margin-block-start: 28px;
 }
+
+
+/* About Business Section */
+
+.about-business {
+  background-color: var(--ghost-white);
+}
+
+.about-top {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+  max-width: 920px;
+  margin-inline: auto;
+  margin-block-end: 42px;
+}
+
+.about-photo {
+  max-width: 340px;
+  margin-inline: auto;
+  border-radius: var(--radius-15);
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-heading .section-subtitle {
+  margin-block-end: 14px;
+}
+
+.about-description {
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+  display: grid;
+  gap: 18px;
+  color: var(--slate-gray);
+  font-size: var(--fs-8);
+  line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+  .about-top {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 48px;
+  }
+
+  .about-photo {
+    max-width: 100%;
+    margin-inline: 0;
+  }
+
+  .about-heading {
+    padding-inline-start: 40px;
+    border-inline-start: 1px solid var(--gainsboro);
+  }
+}
+
+
+/* Small-device flexibility & compact sizing */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  .about-top {
+    gap: 22px;
+    margin-block-end: 24px;
+    text-align: center;
+  }
+
+  .about-heading .section-subtitle {
+    justify-content: center;
+  }
+
+  .about-description {
+    font-size: 1.5rem;
+    line-height: 1.65;
+    gap: 14px;
+  }
+
+  .application-info {
+    text-align: center;
+  }
+
+  .application-banner {
+    max-width: 280px;
+    margin-inline: auto;
+    margin-block-start: 20px;
+  }
+}
+
+@media (max-width: 574px) {
+  :root {
+    --fs-1: 3rem;
+    --fs-2: 2.6rem;
+    --fs-3: 2rem;
+    --fs-4: 1.8rem;
+    --section-padding: 64px;
+  }
+
+  .container {
+    padding-inline: 16px;
+  }
+
+  .hero {
+    padding-block-start: 105px;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    margin-block: 16px 24px;
+  }
+
+  .hero .wrapper {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .about-photo {
+    max-width: 230px;
+  }
+
+  .service-card {
+    padding: 22px 18px;
+    gap: 16px;
+  }
+
+  .feature-card {
+    gap: 14px;
+  }
+
+  .feature-card .card-icon {
+    min-width: 48px;
+    height: 48px;
+    font-size: 2rem;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter-form .email-field {
+    padding-inline-end: 20px;
+  }
+
+  .newsletter-form .btn-secondary {
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-top {
+    gap: 32px;
+  }
+}
